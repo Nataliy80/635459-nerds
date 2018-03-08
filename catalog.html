@@ -1,24 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-  <a class="main-header-logo">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
           <img src="http://placehold.it/150*100"  alt="Логотип дизайн-студии Нёрдс">
-  </a><ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clientage.html">Клиенты</a></li>
-          <li><a href="nerds-catalog.psd">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+      </a>
+      <ul class="site-navigation">
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="clientage.html">Клиенты</a></li>
+        <li class="site-navigation-current"><a href="nerds-catalog.psd">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li class="cart"><a href="cart.html">Корзина</a></li>
       </ul>
-      <ul class="user-navigation">
-            <li class="cart"><a href="cart">Корзина</a></li>
+      <h1>Магазин готовых шаблонов</h1>
+    </nav>
+  </header>
+  <section class="container">
+    <div class="filters">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <!--фильтр--->
+    </div>
+    <div class="catalog">
+      <h2 class="visually-hidden">Список готовых шаблонов</h2>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <a href="#">
+            <img src="#" alt="Картинка SEDONA" />
+        </a>
+          <p class="catalog-item-cart">
+            <b>SEDONA</b><br />
+            <span>Информационный сайт для туристов</span><br />
+            <a class="button" href="#">9 900 РУБ.</a>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <a href="#">
+              <img src="#" alt="Картинка PINK" />
+          </a>
+          <p class="catalog-item-cart">
+            <b>PINK</b><br />
+            <span>Мобильное приложение</span><br />
+            <a class="button" href="#">... РУБ.</a>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <a href="#">
+                <img src="#" alt="Картинка барбершоп Бородинский" />
+            </a>
+          <p class="catalog-item-cart">
+            <b>BORODINSKI</b><br />
+            <span>Сайт барбершопа</span><br />
+            <a class="button" href="#">... РУБ.</a>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <a href="#">
+                  <img src="#" alt="Картинка интернет-магазина MISHKA" />
+              </a>
+          <p class="catalog-item-cart">
+            <b>MISHKA</b><br />
+            <span>Сайт интернет-магазина</span><br />
+            <a class="button" href="#"> ... РУБ.</a>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <a href="#">
+                    <img src="#" alt="Картинка A+ " />
+                </a>
+          <p class="catalog-item-cart">
+            <b>A+</b><br />
+            <span>Сайт образовательного учреждения</span><br />
+            <a class="button" href="#">... РУБ.</a>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <a href="#">
+                      <img src="#" alt="Картинка магазина Кваст " />
+                  </a>
+          <p class="catalog-item-cart">
+            <b>КВАСТ</b><br />
+            <span>Сайт магазина</span><br />
+            <a class="button" href="#">... РУБ.</a>
+          </p>
+        </li>
       </ul>
-        <h1>Магазин готовых шаблонов</h1>
-      </nav>
-    </header>
-    
+      <ul class="pagination-list">
+        <li class="paginator-item paginator-item-current">1</li>
+        <li class="paginator-item"><a href="#">2</a></li>
+        <li class="paginator-item"><a href="#">3</a></li>
+        <li class="paginator-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <h4>NЁRDS DESIN STUDIO</h4>
+    <p>191186,Санкт-Петербург,<br> ул.Б.Конюшенная,д.19/8
+      <br> тел.+7(812)275-75-75
+    </p>
+    <a class="button" href="contacts.html">Напишите нам</a>
+    <a href="map.html">Карта</a>
+  </section>
+
+  <footer class="main-footer">
+    <div>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
+    </div>
+    <div>
+      <b>Давайте дружить,это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
