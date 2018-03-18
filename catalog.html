@@ -4,25 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="catalog-page">
   <header class="main-header">
-    <div>
+    <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.png" width="160" height="65"  alt="Логотип дизайн-студии Нёрдс">
       </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clientage.html">Клиенты</a></li>
-          <li class="site-navigation-current"><a href="nerds-catalog.psd">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="cart.html"><img src="img/cart-icon.svg" alt="cart">Корзина</a></li>
-        </ul>
-        <h1>Магазин готовых шаблонов</h1>
-      </nav>
-    </div>
+      <ul class="site-navigation">
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="clientage.html">Клиенты</a></li>
+        <li class="site-navigation-current"><a href="nerds-catalog.psd">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="cart.html"><img src="img/cart-icon.svg" alt="cart">Корзина</a></li>
+      </ul>
+      <h1>Магазин готовых шаблонов</h1>
+    </nav>
   </header>
   <section class="container">
     <div class="sorting">
@@ -33,6 +33,12 @@
         <li><a href="#">По типу</a></li>
         <li><a href="#">По названию</a></li>
       </ul>
+    <details>
+      <summary>up</summary>
+    </details>
+    <details>
+      <summary>down</summary>
+    </details>
     </div>
     <div class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -94,11 +100,11 @@
         <li class="catalog-item">
           <a href="catalog-item.html">
             <p class="catalog-item-image">
-            <img src="img/img-sedona.png" width="360" height="576" alt="Картинка SEDONA">
-          </p>
+              <img src="img/img-sedona.png" width="360" height="576" alt="Картинка SEDONA">
+            </p>
           </a>
           <p class="catalog-item-price">
-          <b>SEDONA</b><br>
+            <b>SEDONA</b><br>
             <span>Информационный сайт для туристов</span><br>
             <a class="button" href="#">9 900 РУБ.</a>
           </p>
@@ -162,8 +168,8 @@
         <li class="catalog-item">
           <a href="catalog-item.html">
             <p class="catalog-item-image">
-             <img src="img/img-kvast.png" width="360" height="576" alt="Картинка магазина Кваст">
-           </p>
+              <img src="img/img-kvast.png" width="360" height="576" alt="Картинка магазина Кваст">
+            </p>
           </a>
           <p class="catalog-item-price">
             <b>КВАСТ</b><br>
@@ -189,7 +195,7 @@
     </p>
     <a class="button" href="contacts.html">Напишите нам</a>
     <a href="map.html">
-      <img src="img/map2.png" width="1725" height="808" alt="Офис компании по адресу
+      <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу:
       ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </a>
   </section>
