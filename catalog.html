@@ -17,36 +17,37 @@
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
         <li><a href="clientage.html">Клиенты</a></li>
-        <li class="site-navigation-current"><a href="nerds-catalog.psd">Магазин</a></li>
+        <li class="site-navigation-current"><a href="nerds-catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
         <li><a href="cart.html"><img src="img/cart-icon.svg" alt="cart">Корзина</a></li>
       </ul>
-      <h1>Магазин готовых шаблонов</h1>
     </nav>
   </header>
-  <section class="container">
+  <h1>Магазин готовых шаблонов</h1>
+<section class="container">
     <div class="sorting">
       <h2 class="visually-hidden">Проекты</h2>
       <p>Сортировка:</p>
       <ul>
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По названию</a></li>
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По названию</li>
       </ul>
-    <details>
-      <summary>up</summary>
-    </details>
-    <details>
-      <summary>down</summary>
-    </details>
+      <details>
+        <summary>up</summary>
+      </details>
+      <details>
+        <summary>down</summary>
+      </details>
     </div>
+    <div class="catalog-columns">
     <div class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filters" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>СТОИМОСТЬ:</legend>
           <label>
-          <input type="range" name="radio">от 0 до 15 000
+          <input class="button" type="range" name="radio">от 0 до 15 000
         </label>
         </fieldset>
         <fieldset>
@@ -57,7 +58,7 @@
               <label for="filter-adapt">Адаптивная</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed" disabled>
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li class="filter-option">
@@ -187,17 +188,22 @@
         <li class="paginator-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
       </ul>
     </div>
+  </div>
   </section>
+  <div class="catalog-columns">
   <section class="contacts">
+    <div class="adress">
     <h4>NЁRDS DESIN STUDIO</h4>
     <p>191186,Санкт-Петербург,<br> ул.Б.Конюшенная,д.19/8
       <br> тел.+7(812)275-75-75
     </p>
     <a class="button" href="contacts.html">Напишите нам</a>
-    <a href="map.html">
+  </div>
+    <figure>
       <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу:
       ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    </a>
+    </figure>
+  </div>
   </section>
   <footer class="main-footer">
     <div>
@@ -207,7 +213,7 @@
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
     </div>
-    <div>
+    <div class="discount">
       <b>Давайте дружить,это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>

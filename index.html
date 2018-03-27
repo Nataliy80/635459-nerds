@@ -18,7 +18,7 @@
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
         <li><a href="clientage.html">Клиенты</a></li>
-        <li><a href="nerds-catalog.psd">Магазин</a></li>
+        <li><a href="nerds-catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
         <li><a href="cart.html"><img src="img/cart-icon.svg" alt="cart"> Корзина</a></li>
       </ul>
@@ -50,22 +50,30 @@
       <figure>
         <img src="img/slide3.png" width="759" height="411" alt="Слайд3">
       </figure>
-      <label>
-        <input type="radio" name="radio">1
-      </label>
-      <label>
-        <input type="radio" name="radio">2
-      </label>
-      <label>
-        <input type="radio" name="radio">3
-      </label>
+      <ul class="slides-switches">
+        <li class="slide-radio">
+          <button class="slide-btn">
+            Первый слайд
+          </button>
+        </li>
+        <li class="slide-radio">
+          <button class="slide-btn">
+            Второй слайд
+          </button>
+        </li>
+        <li class="slide-radio">
+          <button class="slide-btn">
+            Третий слайд
+          </button>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="container">
     <h2 class="visually-hidden">Услуги</h2>
     <div class="services">
       <ul class="services-list">
-        <li class="site">
+        <li class="index-item">
           <figure>
             <img src="img/illustration-1.jpg" width="300" height="146" alt="картинка">
           </figure>
@@ -73,7 +81,7 @@
           <p>Мир никогда не будет прежним после того,как увидит ваш сайт!</p>
           <a class="button" href="order">Заказать</a>
         </li>
-        <li class="apps">
+        <li class="index-item">
           <figure>
             <img src="img/illustration-2.jpg" width="300" height="146" alt="картинка" />
           </figure>
@@ -81,7 +89,7 @@
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="button" href="order">Заказать</a>
         </li>
-        <li class="presentations">
+        <li class="index-item">
           <figure>
             <img src="img/illustration-3.jpg" width="300" height="146" alt="картинка">
           </figure>
@@ -91,74 +99,85 @@
         </li>
       </ul>
     </div>
-    <div class="info">
-      <h2 class="visually-hidden">Информация о дизайн-студии</h2>
-      <b>Мы-маленькая,но гордая дизайн-студия из Краснодара</b>
-      <p>
-        Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук,как роботы.
-      </p>
-      <h4>Выполняем заказы на разработку:</h4>
-      <ul class="info-list">
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
+    <div class="index-columns">
+      <div class="info">
+        <h2 class="visually-hidden">Информация о дизайн-студии</h2>
+        <b>Мы-маленькая,но гордая дизайн-студия из Краснодара</b>
+        <p>
+          Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук,как роботы.
+        </p>
+        <h4>Выполняем заказы на разработку:</h4>
+        <ul class="info-list">
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="features">
+        <figure>
+          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Картинка">
+        </figure>
+        <h4>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h4>
+        <ul class="features-list">
+          <li>146% Уравень самоотдачи</li>
+          <li>100% Соблюдение сроков</li>
+          <li>50% Минимальная предоплата</li>
+        </ul>
+      </div>
     </div>
-    <div class="features">
+  </section>
+  <div class="index-columns">
+    <section class="partners">
+      <ul class="partners-list">
+        <li><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="Логотип htmlacademy"></a></li>
+        <li><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Логотип барбершопа Бородинский"></a></li>
+        <li><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Логотип мобильного приложения PINK"></a></li>
+        <li><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип интернет-магазина MISHKA"></a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="index-columns">
+    <section class="contacts">
+      <div class="adress">
+        <h4>NЁRDS DESIN STUDIO</h4>
+        <p>191186,Санкт-Петербург,<br> ул.Б.Конюшенная,д.19/8
+          <br> тел.+7(812)275-75-75
+        </p>
+        <a class="button" href="contacts.html">Напишите нам</a>
+      </div>
       <figure>
-        <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Картинка">
+        <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу:
+                  ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </figure>
-      <h4>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h4>
-      <ul class="features-list">
-        <li>146% Уравень самоотдачи</li>
-        <li>100% Соблюдение сроков</li>
-        <li>50% Минимальная предоплата</li>
-      </ul>
-    </div>
-  </section>
-  <section class="partners">
-    <ul class="partners-list">
-      <li><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="Логотип htmlacademy"></a></li>
-      <li><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Логотип барбершопа Бородинский"></a></li>
-      <li><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Логотип мобильного приложения PINK"></a></li>
-      <li><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип интернет-магазина MISHKA"></a></li>
-    </ul>
-  </section>
-  <section class="contacts">
-    <h4>NЁRDS DESIN STUDIO</h4>
-    <p>191186,Санкт-Петербург,<br> ул.Б.Конюшенная,д.19/8
-      <br> тел.+7(812)275-75-75
-    </p>
-    <a class="button" href="contacts.html">Напишите нам</a>
-    <a href="map.html"><img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу:
-    ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
-    <div class="contacts-modal">
-      <h2>Напишите нам</h2>
-      <form class="contacts-form" method="post" action="htts://htmlacademy.ru">
-        <p class="contacts-item">
-          <label for="contacts-name">Ваше имя:</label>
-          <input id="contacts-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="contacts-item">
-          <label for="contacts-mail">Ваш e-mail</label>
-          <input id="contacts-mail" type="text" placeholder="email@example.com">
-        </p>
-        <p class="contacts-item">
-          <label for="contacts-text">Текст письма:</label>
-          <input id="contacts-text" type="text" placeholder="В свободной форме">
-        </p>
-        <button class="button" type="submit">Отправить</button>
-  </section>
-
+  </div>
+  <div class="contacts-modal">
+    <h2>Напишите нам</h2>
+    <form class="contacts-form" method="post" action="htts://htmlacademy.ru">
+      <p class="contacts-item">
+        <label for="contacts-name">Ваше имя:</label>
+        <input id="contacts-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="contacts-item">
+        <label for="contacts-mail">Ваш e-mail:</label>
+        <input id="contacts-mail" type="text" placeholder="email@example.com">
+      </p>
+      <p class="contacts-item">
+        <label for="contacts-text">Текст письма:</label>
+        <input id="contacts-text" type="text" placeholder="В свободной форме">
+      </p>
+      <button class="button" type="submit">Отправить</button>
+      </section>
+  </div>
+  </div>
   <footer class="main-footer">
-    <div>
+    <div class="footer-container">
       <ul class="footer-social">
         <li><a class="social-button" href="#">Вконтакте</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
         <li><a class="social-button" href="#">Инстаграмм</a></li>
       </ul>
     </div>
-    <div>
+    <div class="discount">
       <b>Давайте дружить,это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
