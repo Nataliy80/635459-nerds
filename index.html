@@ -11,95 +11,88 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="clientage.html">Клиенты</a></li>
-        <li><a href="nerds-catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-        <li><a href="cart.html"><img src="img/cart-icon.svg" alt="cart"> Корзина</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clientage.html">Клиенты</a></li>
+          <li><a href="nerds-catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="cart.html"><img src="img/cart-icon.svg" alt="cart"> Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <section class="slide">
-    <div class="slide1">
-      <b>Долго, дорого, скрупулезно.</b>
-      <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-      <a class="button" href="inform">УЗНАТЬ БОЛЬШЕ</a>
-      <figure>
-        <img src="img/slide1.png" width="698" height="431" alt="Слайд1">
-      </figure>
-    </div>
-    <div class="slide2">
-      <b>Любим математику<br>
-      как никто другой</b>
-      <p>Никакого креатива,только математические формулы<br> для расчета идеальных пропорций.</p>
-      <a class="button" href="inform">УЗНАТЬ БОЛЬШЕ</a>
-      <figure>
-        <img src="img/slide2.png" width="663" height="430" alt="Слайд2">
-      </figure>
-    </div>
-    <div>
-      <b>Только ночь,<br>
-        Только хардкор</b>
-      <p>Работать днем,как все?Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-      <a class="button" href="inform">УЗНАТЬ БОЛЬШЕ</a>
-      <figure>
-        <img src="img/slide3.png" width="759" height="411" alt="Слайд3">
-      </figure>
-      <ul class="slides-switches">
-        <li class="slide-radio">
-          <button class="slide-btn">
-            Первый слайд
-          </button>
+  <div class="slider">
+    <div class="container">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+      <div class="slider-controls">
+        <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+        <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+        <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+      </div>
+      <ul class="slider-list">
+        <li class="slider-item">
+          <h3>Долго, дорого, скрупулезно.</h3>
+          <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+          <a class="slider-item-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
         </li>
-        <li class="slide-radio">
-          <button class="slide-btn">
-            Второй слайд
-          </button>
+        <li class="slider-item">
+          <h3>Любим математику как никто другой</h3>
+          <p>Никакого креатива,только математические формулы для расчета идеальных пропорций.</p>
+          <a class="slider-item-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
         </li>
-        <li class="slide-radio">
-          <button class="slide-btn">
-            Третий слайд
-          </button>
+        <li class="slider-item">
+          <h3>Только ночь,<br>
+              только хардкор</h3>
+          <p>Работать днем,как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+          <a class="slider-item-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
         </li>
       </ul>
     </div>
-  </section>
-  <section class="container">
-    <h2 class="visually-hidden">Услуги</h2>
-    <div class="services">
-      <ul class="services-list">
-        <li class="index-item">
-          <figure>
-            <img src="img/illustration-1.jpg" width="300" height="146" alt="картинка">
-          </figure>
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того,как увидит ваш сайт!</p>
-          <a class="button" href="order">Заказать</a>
-        </li>
-        <li class="index-item">
-          <figure>
-            <img src="img/illustration-2.jpg" width="300" height="146" alt="картинка" />
-          </figure>
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button" href="order">Заказать</a>
-        </li>
-        <li class="index-item">
-          <figure>
-            <img src="img/illustration-3.jpg" width="300" height="146" alt="картинка">
-          </figure>
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете,насколько вы изумительны!</p>
-          <a class="button" href="order">Заказать</a>
-        </li>
-      </ul>
+  </div>
+  <div class="services">
+    <div class="container">
+      <section class="container">
+        <h2 class="visually-hidden">Услуги</h2>
+        <div class="services">
+          <ul class="services-list">
+            <li class="index-item">
+              <figure>
+                <img src="img/illustration-1.jpg" width="300" height="146" alt="картинка">
+              </figure>
+              <h3>Веб-сайты</h3>
+              <p>Мир никогда не будет прежним после того,как увидит ваш сайт!</p>
+              <a class="button" href="order">Заказать</a>
+            </li>
+            <li class="index-item">
+              <figure>
+                <img src="img/illustration-2.jpg" width="300" height="146" alt="картинка">
+              </figure>
+              <h3>Приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a class="button" href="order">Заказать</a>
+            </li>
+            <li class="index-item">
+              <figure>
+                <img src="img/illustration-3.jpg" width="300" height="146" alt="картинка">
+              </figure>
+              <h3>Презентации</h3>
+              <p>Вы даже не подозреваете,насколько вы изумительны!</p>
+              <a class="button" href="order">Заказать</a>
+            </li>
+          </ul>
+        </div>
     </div>
-    <div class="index-columns">
+  </div>
+  <div class="index-columns">
+    <div class="container">
       <div class="info">
         <h2 class="visually-hidden">Информация о дизайн-студии</h2>
         <b>Мы-маленькая,но гордая<br> дизайн-студия из Краснодара</b>
@@ -133,16 +126,21 @@
           </li>
         </ul>
       </div>
+      </section>
     </div>
-  </section>
-    <section class="partners">
-      <ul class="partners-list">
-        <li class="partners-item"><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="Логотип htmlacademy"></a></li>
-        <li class="partners-item"><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Логотип барбершопа Бородинский"></a></li>
-        <li class="partners-item"><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Логотип мобильного приложения PINK"></a></li>
-        <li class="partners-item"><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип интернет-магазина MISHKA"></a></li>
-      </ul>
-    </section>
+  </div>
+  <div class="partners">
+    <div class="container">
+      <section class="partners">
+        <ul class="partners-list">
+          <li class="partners-item"><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="Логотип htmlacademy"></a></li>
+          <li class="partners-item"><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Логотип барбершопа Бородинский"></a></li>
+          <li class="partners-item"><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Логотип мобильного приложения PINK"></a></li>
+          <li class="partners-item"><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип интернет-магазина MISHKA"></a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
   <div class="index-columns">
     <section class="contacts">
       <div class="adress">
@@ -157,8 +155,10 @@
                   ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </figure>
   </div>
-  <div class="contacts-modal">
-    <h2>Напишите нам</h2>
+  <div class="modal modal-login">
+    <div class="container">
+    <button class="modal-close" type="button">Закрыть</button>
+      <h2>Напишите нам</h2>
     <form class="contacts-form" method="post" action="htts://htmlacademy.ru">
       <p class="contacts-item">
         <label for="contacts-name">Ваше имя:</label>
@@ -176,8 +176,9 @@
       </section>
   </div>
   </div>
+  <div class="social">
+    <div class="container">
   <footer class="main-footer">
-    <div class="footer-container">
       <ul class="footer-social">
         <li><a class="social-button" href="#">Вконтакте</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -189,6 +190,8 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+</div>
+</div>
 
 </body>
 
