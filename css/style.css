@@ -65,6 +65,11 @@ img  {
   font-weight: 500;
   list-style: none;
 }
+
+.site-navigation li:last-child {
+  padding-left: 240px;
+
+}
 .site-navigation li{
   padding-left: 48px;
 }
@@ -375,13 +380,14 @@ color: rgba(0, 0, 0, 0.3);
 }
 
 .adress {
-  padding: 50px 50px 47px;
+  padding: 50px 50px 45px;
   box-sizing: border-box;
-  width: 315px;
+  width: 320px;
   height: 310px;
   background-color: #ffffff;
   position: absolute;
-  left: 140px;
+  margin-top: 55px;
+  margin-left: 140px;
 }
 
 .contacts .button {
@@ -392,7 +398,7 @@ color: rgba(0, 0, 0, 0.3);
 /*Всплывающая форма*/
 
 .modal {
-
+  display: none;
   color: #000000;
   background-color: #ffffff;
   background-repeat: repeat;
@@ -422,7 +428,6 @@ color: rgba(0, 0, 0, 0.3);
 }
 
 .contacts-item {
-  width: 360px;
   margin: 0;
 }
 
@@ -448,29 +453,24 @@ color: rgba(0, 0, 0, 0.3);
   border-color: #e74246;
 }
 
-.footer-container {
+.main-footer .container {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.main-footer {
-  padding: 65px;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0;
 }
 
 .footer-social {
   display: flex;
   justify-content: space-between;
   width: 260px;
+  margin-left: 140px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .footer-social li {
   list-style: none;
-}
-
-.main-footer b {
-  font-size: 36px;
-  line-height: 36px;
 }
 
 .social-button {
@@ -480,14 +480,13 @@ color: rgba(0, 0, 0, 0.3);
   background: #e1e1e1;
   border-radius: 50%;
 }
-
- .discount {
+.discount {
+  margin-top: 78px;
+  margin-left: 140px;
   width: 560px;
-  margin: 0 0 140px;
- }
+}
 
  .discount b {
-   margin: 0 0 10px;
    font-size: 36px;
    line-height: 36px;
    font-weight: 700;
