@@ -158,27 +158,6 @@
       </div>
     </div>
   </section>
-    <div class="modal modal-login">
-      <div class="container">
-        <button class="modal-close" type="button">Закрыть</button>
-          <h2>Напишите нам</h2>
-        <form class="contacts-form" method="post" action="htts://htmlacademy.ru">
-          <p class="contacts-item">
-            <label for="contacts-name">Ваше имя:</label>
-            <input id="contacts-name" type="name" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p class="contacts-item">
-            <label for="contacts-mail">Ваш e-mail:</label>
-            <input id="contacts-mail" type="email" placeholder="email@example.com">
-          </p>
-          <p class="contacts-item">
-            <label for="contacts-text">Текст письма:</label>
-            <input id="contacts-text" type="text" placeholder="В свободной форме">
-          </p>
-          <button class="button" type="submit">Отправить</button>
-  </section>
-  </div>
-</div>
   <footer class="main-footer">
     <div class="main-footer">
       <div class="container">
@@ -219,6 +198,27 @@
       </div>
   </footer>
   </div>
+  <div class="modal modal-login">
+    <div class="container">
+        <h2>Напишите нам</h2>
+      <form class="contacts-form" method="post" action="htts://htmlacademy.ru">
+        <p class="contacts-name">
+          <label for="contacts-name">Ваше имя:</label>
+          <input id="contacts-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="contacts-mail">
+          <label for="contacts-mail">Ваш e-mail:</label>
+          <input id="contacts-mail" type="email" placeholder="email@example.com">
+        </p>
+        <p class="comment-area">
+          <label for="user-comment">Текст письма:</label>
+          <textarea id="user-comment" type="user-comment" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit" name="send-form">Отправить</button>
+      </form>
+      <button class="close" type="button" name="close">Закрыть</button>
+</div>
+</div>
 
 </body>
 
