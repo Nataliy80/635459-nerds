@@ -120,6 +120,11 @@ img  {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.site-navigation a:active {
+  border-bottom: 2px solid red;
+}
+
+
 
 .slider {
   position: relative;
@@ -701,6 +706,7 @@ img  {
   margin-top: 50px;
 }
 
+
 .option-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -712,6 +718,11 @@ img  {
 .option-wrapper li {
   margin: 0;
   padding-right: 30px;
+  list-style: none;
+}
+
+.option-wrapper li:first-child {
+  padding-right: 260px;
 }
 
 .catalog-list {
@@ -722,13 +733,33 @@ img  {
   margin-top: 50px;
   list-style: none;
 }
+.sorting .choice {
+  list-style: none;
+
+}
+
+.option-wrapper li:hover,
+.sorting .choice:hover {
+  opacity: 0.6;
+}
+
+.option-wrapper li:active,
+.sorting .choice:active {
+  opacity: 1;
+}
 
 .catalog-item {
   position: relative;
   width: 360px;
   margin-bottom: 35px;
   margin-right: 40px;
-  border-top: 30px solid #e9e9e9;
+  border-top: 40px solid #e9e9e9;
+  border-radius: 5px;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  border-top: 40px solid #4d4d4d;
 }
 
 .catalog-list figure {
@@ -737,14 +768,14 @@ img  {
 
 .catalog-item::after {
   content: "";
-  height: 10px;
-  width: 10px;
+  height: 15px;
+  width: 15px;
   background: #fff;
   border-radius: 50%;
   box-shadow: 17px 0 0 #fff,34px 0 0 #fff;
   position: absolute;
   left: 12px;
-  top: -20px;
+  top: -25px;
 }
 
 .catalog-item:nth-child(2n) {
@@ -771,6 +802,7 @@ img  {
   bottom: 0;
   z-index: 100;
   display: ;
+  border-radius: 5px;
 }
 
 .catalog-item-price a {
@@ -782,7 +814,7 @@ img  {
   display: block;
   width: 200px;
   padding: 15px 30px;
-  margin-bottom: 45px;
+  margin: auto;
 }
 
 .catalog-item-price span {
@@ -800,19 +832,6 @@ img  {
 .catalog-item-price a:focus {
   background-color: #d7373b;
   color: #e37376;
-}
-
-.sorting li {
-  list-style: none;
-  color: #cccccc;
-}
-
-.sorting li:hover {
-  color: #666666;
-}
-
-.sorting li:active {
-  color: #000000;
 }
 
 .filter-item {
@@ -866,7 +885,6 @@ img  {
   background-position: 0 0;
 }
 
-
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
@@ -874,9 +892,14 @@ img  {
   top: 0;
   width: 25px;
   height: 25px;
-  background-image: url(../img/radio-on.svg);
+  background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input[type="checkbox"],
+.filter-input[type="radio"] {
+  display: none;
 }
 
 .range-controls {
@@ -1034,7 +1057,7 @@ img  {
   margin-right: 10px;
   padding: 14px;
   background-color: #ffffff;
-  border: 3px solid #dbdbdb;
+  border: 2px solid #dbdbdb;
   border-radius: 3px;
 }
 
